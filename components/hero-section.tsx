@@ -1,6 +1,7 @@
 "use client"
 
 import { useState } from "react"
+import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { ArrowRight, Download, Search } from "lucide-react"
 import Image from "next/image"
@@ -23,7 +24,7 @@ export function HeroSection() {
             <div className="relative rounded-full shadow-2xl">
               <Image
                 src="/wojak-logo.png"
-                alt="WojakCoin Logo"
+                alt="WojakCoin (WJK) — Wojak coin and Wojakcoin 2017 official logo"
                 width={256}
                 height={256}
                 className="rounded-full"
@@ -56,10 +57,10 @@ export function HeroSection() {
               <ArrowRight className="h-5 w-5" />
             </Button>
             <Button size="lg" variant="outline" className="text-lg gap-2 bg-transparent" asChild>
-              <a href="https://github.com/WojakCoinProj/wojakcore/releases" target="_blank" rel="noopener noreferrer">
+              <Link href="/wallets">
                 <Download className="h-5 w-5" />
-                {"Download Wallet"}
-              </a>
+                {"View wallets"}
+              </Link>
             </Button>
             <Button
               size="lg"

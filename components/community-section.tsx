@@ -1,3 +1,4 @@
+import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 
@@ -43,7 +44,7 @@ export function CommunitySection() {
       icon: TelegramIcon,
       name: "Telegram",
       description: "Connect with fellow wojaks",
-      link: "https://t.me/wojakcoin2017",
+      link: "https://t.me/Wojak_Portal",
     },
     {
       icon: TelegramIcon,
@@ -91,17 +92,13 @@ export function CommunitySection() {
             <CardContent className="pt-6">
               <h3 className="text-2xl font-bold mb-4">Ready to Get Started?</h3>
               <p className="text-muted-foreground mb-6">
-                Download the wallet, join our community, and start sending wojaks today!
+                View wallets, join our community, and start sending wojaks today!
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button asChild size="lg" className="gap-2">
-                  <a
-                    href="https://github.com/WojakCoinProj/wojakcore/releases"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Download Wallet
-                  </a>
+                  <Link href="/wallets">
+                    View wallets
+                  </Link>
                 </Button>
               </div>
             </CardContent>

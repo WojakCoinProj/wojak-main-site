@@ -1,30 +1,30 @@
-# WojakCoin website creation
+# WojakCoin website
 
-*Automatically synced with your [v0.app](https://v0.app) deployments*
-
-[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/reallyshadydevs-projects/v0-wojak-coin-website-creation)
-[![Built with v0](https://img.shields.io/badge/Built%20with-v0.app-black?style=for-the-badge)](https://v0.app/chat/pSCH4OxZ3gJ)
+Official website for WojakCoin - P2P Meme Currency
 
 ## Overview
 
-This repository will stay in sync with your deployed chats on [v0.app](https://v0.app).
-Any changes you make to your deployed app will be automatically pushed to this repository from [v0.app](https://v0.app).
+WojakCoin is a peer-to-peer meme currency that serves the internet community. This is the official website for WojakCoin.
 
-## Deployment
+## Development
 
-Your project is live at:
+To run the development server:
 
-**[https://vercel.com/reallyshadydevs-projects/v0-wojak-coin-website-creation](https://vercel.com/reallyshadydevs-projects/v0-wojak-coin-website-creation)**
+```bash
+npm run dev
+```
 
-## Build your app
+To build for production:
 
-Continue building your app on:
+```bash
+npm run build
+npm start
+```
 
-**[https://v0.app/chat/pSCH4OxZ3gJ](https://v0.app/chat/pSCH4OxZ3gJ)**
+## Features
 
-## How It Works
-
-1. Create and modify your project using [v0.app](https://v0.app)
-2. Deploy your chats from the v0 interface
-3. Changes are automatically pushed to this repository
-4. Vercel deploys the latest version from this repository
+- Modern, responsive design
+- Community links and resources
+- Wallet information and downloads
+- Mining pool information
+- Blockchain explorer integration

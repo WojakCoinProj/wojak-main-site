@@ -8,11 +8,26 @@ export function Footer() {
             <p className="text-sm text-muted-foreground">
               {"A peer to peer meme currency serving the internet community created 2017 revived 2025 ."}
             </p>
+            <p className="text-sm text-muted-foreground">
+              <span className="font-medium text-foreground">Official site: </span>
+              <a href="https://wojakcoin2017.xyz" className="hover:underline" target="_blank" rel="noopener noreferrer">wojakcoin2017.xyz</a>
+              {" · "}
+              <a href="https://wojakcoin.cash" className="hover:underline" target="_blank" rel="noopener noreferrer">wojakcoin.cash</a>
+            </p>
+            <p className="text-sm text-muted-foreground">
+              <span className="font-medium text-foreground">Contact: </span>
+              <a href="mailto:wojakcoin2017@gmail.com" className="hover:underline">wojakcoin2017@gmail.com</a>
+            </p>
           </div>
 
           <div className="flex flex-col gap-4">
             <h3 className="text-lg font-bold">{"Resources"}</h3>
             <ul className="flex flex-col gap-2 text-sm text-muted-foreground">
+              <li>
+                <a href="/whitepaper" className="hover:text-foreground transition-colors">
+                  {"Whitepaper"}
+                </a>
+              </li>
               <li>
                 <a
                   href="https://bitcointalk.org/index.php?topic=2089941"
@@ -62,7 +77,7 @@ export function Footer() {
                 </a>
               </li>
               <li>
-                <a href="https://t.me/wojakcoin2017" className="hover:text-foreground transition-colors">
+                <a href="https://t.me/Wojak_Portal" className="hover:text-foreground transition-colors">
                   {"Telegram"}
                 </a>
               </li>

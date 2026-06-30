@@ -3,40 +3,32 @@ import { Card } from "@/components/ui/card"
 
 const pools = [
   {
-    name: "RegularPool",
-    url: "https://regularpool.com",
-    description: "Reliable mining pool with consistent payouts and low fees",
-    initials: "RP",
-  },
-  {
-    name: "KriptoKyng",
-    url: "https://kriptokyng.com/pools/wojak",
-    description: "Standard pool mining with shared rewards",
-    initials: "KK",
-  },
-  {
-    name: "KriptoKyng Solo",
-    url: "https://kriptokyng.com/pools/wojaksolo",
-    description: "Solo mining pool - mine blocks independently",
-    initials: "KS",
-  },
-  {
-    name: "AltcoinsPool",
-    url: "https://altcoinspool.cc",
-    description: "Multi-coin mining pool with competitive fees",
-    initials: "AC",
+    name: "RT-Pool",
+    url: "https://rt-pool.cc",
+    description: "Preferred mining pool — reliable payouts and low fees",
+    logo: "/pools/rt-pool.png",
+    initials: "RT",
   },
   {
     name: "AU Merged Mine",
     url: "https://au-merged-mine.cminors-pool.com/site/mining",
     description: "Australian merged mining pool with multiple coins",
+    logo: "/pools/au-merged.png",
     initials: "AU",
   },
   {
-    name: "HimPool",
-    url: "https://himpool.com/pools/wojak",
-    description: "Community-driven mining pool with regular payouts",
-    initials: "HP",
+    name: "Mining Dutch",
+    url: "https://www.mining-dutch.nl/pools/wojakcoin.php",
+    description: "Multi-algo pool with a dedicated WojakCoin (WJK) pool",
+    logo: "/pools/miningdutch.png",
+    initials: "MD",
+  },
+  {
+    name: "zpool",
+    url: "https://www.zpool.ca/site/mining?algo=sha256",
+    description: "Profit-switching multi-algo pool — mine WJK on SHA-256",
+    logo: "/pools/zpool.png",
+    initials: "Z",
   },
 ]
 
@@ -56,8 +48,13 @@ export function MiningPoolsSection() {
           {pools.map((pool) => (
             <Card key={pool.name} className="p-4 border-2 hover:border-primary transition-colors">
               <div className="flex items-start gap-4">
-                <div className="h-12 w-12 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
-                  <span className="text-lg font-bold text-primary">{pool.initials}</span>
+                <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-lg bg-white p-1.5 shadow-sm ring-1 ring-black/5">
+                  <img
+                    src={pool.logo || "/placeholder-logo.png"}
+                    alt={`${pool.name} logo`}
+                    className="h-full w-full object-contain"
+                    loading="lazy"
+                  />
                 </div>
                 <div className="flex-1 min-w-0">
                   <h3 className="text-lg font-semibold mb-1">{pool.name}</h3>
